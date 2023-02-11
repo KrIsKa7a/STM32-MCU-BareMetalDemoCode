@@ -2,7 +2,7 @@
 In this repository I will upload a few demo examples of how to code [**STM32 MCU**](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html) without using [*HAL*](https://en.wikipedia.org/wiki/Hardware_abstraction). We will use only the peripheral driver provided by STMicroelectronics but in the first example we have showed how to write one by yourself using technical documentation.
 
 ## Used MCU's 📟
-1. [**STM32F103C8T6**](https://www.st.com/content/st_com/en/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f103/stm32f103c8.html) - ARM®Cortex®-M3 32-bit RISC core based MCU. Used only in the *fist demo* of writing peripheral drivers. 
+1. [**STM32F103C8T6**](https://www.st.com/content/st_com/en/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f103/stm32f103c8.html) - ARM®Cortex®-M3 32-bit RISC core based MCU. Used only in the *first demo* of writing peripheral drivers. 
 2. [**STM32F722ZET6**](https://www.st.com/en/microcontrollers-microprocessors/stm32f722ze.html) - ARM® Cortex®-M7 32-bit RISC core based MCU. Used in all demos apart from the frist one. We will use it in NUCLEO-DEVELOPMENT Board.
 
 ## Project Resolution 🚀
