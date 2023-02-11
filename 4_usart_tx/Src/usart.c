@@ -5,9 +5,9 @@
 #define GPIOA_EN    	(1U<<0)
 #define USART2_EN   	(1U<<17)
 
-#define CR1_UE			(1U<<0)
-#define CR1_TE			(1U<<3)
-#define ISR_TXE			(1U<<7)
+#define CR1_UE		(1U<<0)
+#define CR1_TE		(1U<<3)
+#define ISR_TXE		(1U<<7)
 
 #define APB1_CLK    	54000000
 
