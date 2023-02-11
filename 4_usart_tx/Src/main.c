@@ -19,8 +19,10 @@ int main(void) {
 
 		if (key == '1') {
 			GPIOB->ODR |= LED_PIN;
+			printf("LED is turned on!");
 		} else {
 			GPIOB->ODR &= ~(LED_PIN);
+			printf("LED is turned off!");
 		}
 	}
 }
