@@ -5,9 +5,12 @@
 #define GPIOA_EN    	(1U<<0)
 #define USART2_EN   	(1U<<17)
 
-#define CR1_UE		(1U<<0)
-#define CR1_TE		(1U<<3)
-#define ISR_TXE		(1U<<7)
+#define CR1_UE			(1U<<0)
+#define CR1_TE			(1U<<3)
+#define CR1_RE			(1U<<2)
+
+#define ISR_TXE			(1U<<7)
+#define ISR_RXNE		(1U<<5)
 
 #define APB1_CLK    	54000000
 
@@ -21,7 +24,7 @@ int __io_putchar(int ch) {
 	return ch;
 }
 
-void usart2_tx_init(void) {
+void usart2_rx_tx_init(void) {
 	// Enable clock access for GPIOA
 	RCC->AHB1ENR |= GPIOA_EN;
 
@@ -35,6 +38,16 @@ void usart2_tx_init(void) {
 	GPIOA->AFR[0] |= (1U<<10);
 	GPIOA->AFR[0] &= ~(1U<<11);
 
+	// Set PA3 as alternate function mode
+	GPIOA->MODER &= ~(1U<<6);
+	GPIOA->MODER |= (1U<<7);
+
+	// Set the type of the alternate function
+	GPIOA->AFR[0] |= (1U<<12);
+	GPIOA->AFR[0] |= (1U<<13);
+	GPIOA->AFR[0] |= (1U<<14);
+	GPIOA->AFR[0] &= ~(1U<<15);
+
 	// Enable clock access for USART2
 	RCC->APB1ENR |= USART2_EN;
 
@@ -42,8 +55,16 @@ void usart2_tx_init(void) {
 	usart_set_baudrate(USART2, APB1_CLK, USART_BAUDRATE);
 
 	// Configure transfer direction
-	USART2->CR1 = CR1_TE;
+	USART2->CR1 = (CR1_TE | CR1_RE);
 	USART2->CR1 |= CR1_UE;
+}
+
+char usart2_read(void) {
+	while(!(USART2->ISR & ISR_RXNE)) {
+
+	}
+
+	return USART2->RDR;
 }
 
 void usart2_write(int ch) {

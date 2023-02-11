@@ -10,7 +10,8 @@
 
 #include "stm32f7xx.h"
 
-void usart2_tx_init(void);
+void usart2_rx_tx_init(void);
+char usart2_read(void);
 void usart2_write(int ch);
 
 #endif /* USART_H_ */
