@@ -13,6 +13,7 @@ This repository was created only for educational purposes. At the end of the cou
 2. [**GPIO Output**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/2_gpio_output) - In this project we are setting GPIO ports and pins as output pins using the provided GPIO struct from STM32CubeF7 Development package.
 3. [**GPIO Input and Output**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/3_gpio_toggle_led_with_button) - In this project we are using GPIO ports and pins as input and output. We are doing a simple toggle LED with a button.
 4. [**USART-RX-TX**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/4_usart_tx) - In this project we are configuring USART-RX-TX data transmission. Our device will work as a receiver and transmitter and will send data to a terminal inside our computer using [*Serial/TCP Terminal*](https://sourceforge.net/projects/realterm/). We will also toggle the built-in LED using commands from the computer terminal.
+5. [**ADC**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/5_adc_singleconversion) - In this project we are configuring ADC Module. This allows us to read analog values from sensors measuring surrounding world parameters - Temperature, Pressure, Humidity, etc. We are configuring single channel in Single Conversion and Continious Conversion Mode. You can also add Multiple Channels easily to the written code.
 
 ## Technical Documentation Used 🗎
 1. [**STM32F7x2 Datasheet**](https://www.st.com/resource/en/datasheet/stm32f722ze.pdf)
