@@ -31,11 +31,12 @@ void pa1_adc1_init() {
 	ADC1->SQR1 = ADC_SEQ_LEN;
 
 	// Enable ADC Module
-	//ADC1->CR2 |= ADC1_CR1_DISCEN;
 	ADC1->CR2 |= ADC_CR2_ADON;
 }
 
 void start_conversion() {
+	// Uncomment the following line if we want discontinious conversion (single conversion)
+	//ADC1->CR2 |= ADC1_CR1_DISCEN;
 	ADC1->CR2 |= ADC_CR2_SWSTART;
 }
 
