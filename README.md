@@ -16,6 +16,7 @@ This repository was created only for educational purposes. At the end of the cou
 5. [**ADC**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/5_adc_singleconversion) - In this project we are configuring ADC Module. This allows us to read analog values from sensors measuring surrounding world parameters - Temperature, Pressure, Humidity, etc. We are configuring single channel in Single Conversion and Continious Conversion Mode. You can also add Multiple Channels easily to the written code.
 6. [**SysTick Timer**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/6_systick_delay) - In this project we are using the Cortex-Mx built-in System Tick Timer. We are showing how to create a simple but very useful delay function.
 7. [**Timers**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/7_timers) - In this project we are developing driver for using Timer module in different modes - General-Purpose Mode, Input Capture Mode and Output Compare Mode. We show their usage for measuring time and creating interrupts, for toggling output and for measuring the frequency of input signal.
+8. [**Interrupts**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/8_interrupts) - In this project we are enabling interrupt programming model for different peripheral drivers we have already written. We are enabling EXTI handlers for GPIOs, UART, ADC, SysTick and TIM interrupts. 
 
 ## Technical Documentation Used 🗎
 1. [**STM32F7x2 Datasheet**](https://www.st.com/resource/en/datasheet/stm32f722ze.pdf)
