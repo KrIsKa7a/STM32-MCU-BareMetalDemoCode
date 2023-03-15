@@ -17,6 +17,7 @@ This repository was created only for educational purposes. At the end of the cou
 6. [**SysTick Timer**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/6_systick_delay) - In this project we are using the Cortex-Mx built-in System Tick Timer. We are showing how to create a simple but very useful delay function.
 7. [**Timers**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/7_timers) - In this project we are developing driver for using Timer module in different modes - General-Purpose Mode, Input Capture Mode and Output Compare Mode. We show their usage for measuring time and creating interrupts, for toggling output and for measuring the frequency of input signal.
 8. [**Interrupts**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/8_interrupts) - In this project we are enabling interrupt programming model for different peripheral drivers we have already written. We are enabling EXTI handlers for GPIOs, UART, ADC, SysTick and TIM interrupts. 
+9. [**DMA**](https://github.com/KrIsKa7a/STM32-MCU-BareMetalDemoCode/tree/main/9_dma) - In this project we are enabling DMA data transfer from the internal memory to the USART3 peripheral. We are using USART-TX in order to send data using our USB connection but this time we have enabled DMA for the transfer in order to speed-up the process. 
 
 ## Technical Documentation Used 🗎
 1. [**STM32F7x2 Datasheet**](https://www.st.com/resource/en/datasheet/stm32f722ze.pdf)
